@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wong Pou I - Portfolio</title>
+    <link rel="stylesheet" href="cisc3003-SugEx02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/UM_logo.png" alt="University of Macau Logo" class="um-logo">
+                <div class="name-title">
+                    <h1>WONG POU I</h1>
+                    <p>Computer Science Senior | Software Engineering</p>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#values">Values</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+            <li><a href="#values" class="mobile-nav-link">Values & Beliefs</a></li>
+            <li><a href="#career" class="mobile-nav-link">Career Aspirations</a></li>
+            <li><a href="#interests" class="mobile-nav-link">Interests</a></li>
+            <li><a href="#blog" class="mobile-nav-link">Blog Articles</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="home-overlay"></div>
+            <div class="container">
+                <div class="home-content">
+                    <h2 class="home-title">Hello, I'm <span class="highlight">Wong Pou I</span></h2>
+                    <p class="home-subtitle">A Senior Computer Science student at University of Macau specializing in Software Engineering</p>
+                    <p class="home-description">Passionate about technology, continuous learning, and creating meaningful digital experiences.</p>
+                    <a href="#about" class="btn-primary">Learn More About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="images/Student_headshot.jpg" alt="Wong Pou I Headshot" class="headshot">
+                        </div>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>University of Macau, Faculty of Science and Technology</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Major</h4>
+                                    <p>Computer Science - Software Engineering Track</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <h4>Year</h4>
+                                    <p>Senior (Expected Graduation: 2026)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>My Journey at University of Macau</h3>
+                        <p>As a senior Computer Science student, I've developed strong skills in software development, algorithms, and system design. My studies have focused on practical applications of computing principles to solve real-world problems.</p>
+                        
+                        <p>Throughout my university years, I've actively participated in various college activities at CKLC (Cheong Kun Lun College), which helped me develop beyond academic knowledge. These experiences enhanced my understanding of teamwork, communication, and personal growth.</p>
+                        
+                        <div class="activity-highlights">
+                            <h4>Key University Activities</h4>
+                            <ul>
+                                <li><strong>Campus Night Run (Oct 2022):</strong> Challenged my physical limits and perseverance</li>
+                                <li><strong>Dining Etiquette Workshop (Oct 2022):</strong> Learned professional social skills</li>
+                                <li><strong>College Students Entrepreneurship (Oct 2022):</strong> Gained insights into startup challenges</li>
+                                <li><strong>Mental Health Movie Screenings (Nov 2022):</strong> Developed emotional intelligence through film analysis</li>
+                                <li><strong>CKLC Talent Show (Mar 2023):</strong> Won aromatherapy prize in college event</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="competence-areas">
+                            <h4>Developed Competence Areas</h4>
+                            <div class="competence-tags">
+                                <span class="tag">Healthy Lifestyle</span>
+                                <span class="tag">Knowledge Integration</span>
+                                <span class="tag">Global Competitiveness</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-images">
+                    <h3 class="images-title">University Life Moments</h3>
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="images/Participate_competition_1.jpg" alt="Participating in Competition">
+                            <p class="image-caption">High School Competition</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Participate_competition_2.jpg" alt="Team Competition">
+                            <p class="image-caption">Team Competition Event</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Participate_activity.jpg" alt="CKLC Talent Show Win">
+                            <p class="image-caption">Winning Prize at CKLC Talent Show</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Participate_Volunteer.jpg" alt="Volunteer at Cultural Performance">
+                            <p class="image-caption">Volunteer at Cultural Performance (Aug 2025)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values and Beliefs Section -->
+        <section id="values" class="section values-section">
+            <div class="container">
+                <h2 class="section-title">My Values & Beliefs</h2>
+                <div class="values-content">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Continuous Learning</h3>
+                        <p>I believe that education extends beyond classrooms. Participating in diverse college activities taught me valuable life skills and broadened my perspective.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Engagement</h3>
+                        <p>Active participation in residential college life has shown me the importance of being part of a community and contributing to collective growth.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Work-Life Balance</h3>
+                        <p>Balancing academics with extracurricular activities taught me time management and the importance of maintaining a healthy lifestyle alongside professional development.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Seizing Opportunities</h3>
+                        <p>As I learned from my RC life: "Opportunities are reserved for those who are ready." I proactively seek and prepare for opportunities in both academic and professional spheres.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Aspirations Section -->
+        <section id="career" class="section career-section">
+            <div class="container">
+                <h2 class="section-title">My Career Aspirations</h2>
+                <div class="career-content">
+                    <div class="career-main">
+                        <div class="career-image">
+                            <img src="images/Computer_science.jpg" alt="Computer Science Icon">
+                        </div>
+                        <div class="career-text">
+                            <h3>Software Engineering & Game Development</h3>
+                            <p>My primary career goal is to become a skilled software engineer with a specialization in game development. Through my coursework and self-study, I'm building expertise in:</p>
+                            <ul>
+                                <li><strong>Programming Languages:</strong> C++, Python, Java, JavaScript</li>
+                                <li><strong>Game Development:</strong> Exploring 3D modeling and game engine technologies</li>
+                                <li><strong>Web Technologies:</strong> Full-stack development for creating interactive experiences</li>
+                                <li><strong>System Design:</strong> Architecture and design patterns for scalable applications</li>
+                            </ul>
+                            <p>My participation in entrepreneurship workshops and industry sharing sessions at CKLC has given me practical insights into the tech industry's demands and challenges.</p>
+                        </div>
+                    </div>
+                    <div class="career-goals">
+                        <h3>Short-term & Long-term Goals</h3>
+                        <div class="goal-cards">
+                            <div class="goal-card">
+                                <h4><i class="fas fa-graduation-cap"></i> Immediate Goal</h4>
+                                <p>Excel in final year projects and secure admission to a reputable postgraduate program in Computer Science or Game Development.</p>
+                            </div>
+                            <div class="goal-card">
+                                <h4><i class="fas fa-briefcase"></i> Career Entry</h4>
+                                <p>Join a technology company as a software engineer to gain industry experience and contribute to meaningful projects.</p>
+                            </div>
+                            <div class="goal-card">
+                                <h4><i class="fas fa-gamepad"></i> Specialization</h4>
+                                <p>Develop expertise in game development, combining technical skills with creative problem-solving to create engaging digital experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="section interests-section">
+            <div class="container">
+                <h2 class="section-title">My Interests & Hobbies</h2>
+                <div class="interests-content">
+                    <div class="interest-card">
+                        <div class="interest-image">
+                            <img src="images/Tea_making.webp" alt="Chinese Tea Ceremony">
+                        </div>
+                        <div class="interest-text">
+                            <h3><i class="fas fa-leaf"></i> Chinese Tea Ceremony</h3>
+                            <p>The art of tea making helps me cultivate patience, mindfulness, and appreciation for tradition. It provides a peaceful counterbalance to the fast-paced world of technology.</p>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-text">
+                            <h3><i class="fas fa-book"></i> Reading Novels</h3>
+                            <p>Reading fiction enhances my creativity and understanding of human experiences. It's a way to explore different perspectives and storytelling techniques.</p>
+                            <p>My favorite genres include science fiction, classics, and literary fiction that explores complex characters and societal themes.</p>
+                        </div>
+                        <div class="interest-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="interest-text">
+                            <h3><i class="fas fa-music"></i> Listening to Music</h3>
+                            <p>Music is both a source of relaxation and inspiration. I enjoy diverse genres from classical and jazz to electronic and film scores, each offering different emotional and creative stimuli.</p>
+                            <p>Attending the CKLC talent show further deepened my appreciation for musical performances and artistic expression.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Articles Section -->
+        <section id="blog" class="section blog-section">
+            <div class="container">
+                <h2 class="section-title">Blog Articles</h2>
+                <div class="blog-content">
+                    <div class="blog-intro">
+                        <p>I regularly reflect on my learning journey and experiences through writing. My blog documents insights from courses, projects, and extracurricular activities.</p>
+                        <a href="https://eportfolio.um.edu.mo/user/view.php?id=111756" class="btn-secondary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visit My E-Portfolio
+                        </a>
+                    </div>
+                    
+                    <div class="blog-highlight">
+                        <h3>Featured Reflection: My Year-1 Residential College Life</h3>
+                        <p>In my first year at University of Macau, I participated in 11 CKLC activities that significantly contributed to my personal development:</p>
+                        
+                        <div class="blog-excerpt">
+                            <h4>Key Takeaways from Residential College Life:</h4>
+                            <ul>
+                                <li><strong>Holistic Development:</strong> College activities helped me develop in healthy lifestyle, knowledge integration, and global competitiveness areas</li>
+                                <li><strong>Practical Skills:</strong> Workshops on dining etiquette, civil service tests, and entrepreneurship provided real-world knowledge</li>
+                                <li><strong>Community Integration:</strong> Activities helped me quickly adapt to university life and build meaningful connections</li>
+                                <li><strong>Beyond Academics:</strong> Learned that valuable education happens both inside and outside the classroom</li>
+                            </ul>
+                            <p>These experiences taught me that opportunities must be seized when they arise, and preparation is key to making the most of them. I'm grateful for the growth opportunities provided by CKLC's diverse activity programming.</p>
+                        </div>
+                        
+                        <div class="blog-images">
+                            <h4>Activity Highlights:</h4>
+                            <div class="blog-image-grid">
+                                <div>
+                                    <h5>Campus Night Run</h5>
+                                    <p>Challenged physical endurance and perseverance</p>
+                                </div>
+                                <div>
+                                    <h5>Entrepreneurship Workshop</h5>
+                                    <p>Learned about startup challenges and business fundamentals</p>
+                                </div>
+                                <div>
+                                    <h5>Movie Screenings</h5>
+                                    <p>Developed cultural appreciation and critical thinking through film</p>
+                                </div>
+                                <div>
+                                    <h5>Talent Show Participation</h5>
+                                    <p>Won prize and enjoyed artistic performances</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>I'm currently in my final year at University of Macau and actively exploring opportunities in software engineering and game development.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:dc22657@um.edu.mo">dc22657@um.edu.mo</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h4>University</h4>
+                                    <p>University of Macau, Faculty of Science and Technology</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Taipa, Macau SAR</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-note">
+                            <p>I welcome connections with fellow students, educators, and professionals in the technology field. Feel free to reach out regarding:</p>
+                            <ul>
+                                <li>Graduate study opportunities</li>
+                                <li>Internship or entry-level positions in software engineering</li>
+                                <li>Collaborative projects or research</li>
+                                <li>Networking within the tech community</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                        <p class="form-note">Note: This form is for demonstration purposes. In a live website, backend integration would be required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/UM_logo_full.png" alt="University of Macau Logo" class="footer-um-logo">
+                <div>
+                    <h3>WONG POU I</h3>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#career">Career</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://eportfolio.um.edu.mo/user/view.php?id=111756" target="_blank">E-Portfolio</a></li>
+                        <li><a href="https://www.um.edu.mo" target="_blank">University of Macau</a></li>
+                        <li><a href="#blog">Blog Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="mailto:dc22657@um.edu.mo" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 WONG POU I. All rights reserved.</p>
+            <p class="course-info">CISC3003 Web Programming - 2026: DC226572 Wong Pou I</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
