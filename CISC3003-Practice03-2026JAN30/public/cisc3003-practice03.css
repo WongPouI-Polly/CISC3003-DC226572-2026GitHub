@@ -119,13 +119,6 @@ section div a {
 }
 
 /* Reviews section */
-#related-photos > div {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 #reviews div {
     border-bottom: 1px solid #ccc;
     margin: 0 15px;
