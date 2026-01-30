@@ -98,8 +98,7 @@ figure {
 
 figure img {
     display: block;
-    width: 100%;
-	height: auto;
+    max-width: 100%;
     margin-left: 0;
 }
 
@@ -115,18 +114,27 @@ figcaption em {
 
 /* Content links */
 section div a {
-    color: blue;
+    color: #00B0FF;
 }
 
 /* Reviews section */
+#related-photos > div {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 #reviews div {
+    margin: 15px;
+    padding: 0;
     border-bottom: 1px solid #ccc;
-    margin: 0 15px;
-    padding: 10px 20px;
 }
 
 #reviews div:last-child {
     border-bottom: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .byline {
