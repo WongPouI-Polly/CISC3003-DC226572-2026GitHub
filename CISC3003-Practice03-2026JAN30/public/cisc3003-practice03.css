@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* Font stacks */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8EAF6;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #1A237E;
+    color: white;
+    padding: 20px 30px 0 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 15px 0;
+    font-style: italic;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #3F51B5;
+    margin: 0 -30px;
+    padding: 10px 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #00B0FF;
+    text-decoration: underline;
+}
+
+/* Link hover styles for all links */
+a:hover {
+    color: #00B0FF;
+    background-color: #F50057;
+}
+
+/* Main content area */
+main {
+    background-color: #E8EAF6;
+    padding: 20px 30px;
+}
+
+/* Section styles */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 2px solid #C5CAE9;
+}
+
+section h3 {
+    background-color: #7986CB;
+    color: white;
+    margin: 0;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+section > div{
+    padding: 10px;
+    margin-left: 0;
+}
+
+section > figure {
+    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Figure and image styles */
+figure {
+    margin: 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+	height: auto;
+    margin-left: 0;
+}
+
+figcaption {
+    background-color: #C5CAE9;
+    color: #333333;
+    padding: 10px 5px;
+}
+
+figcaption em {
+    font-style: italic;
+}
+
+/* Content links */
+section div a {
+    color: blue;
+}
+
+/* Reviews section */
+#related-photos > div {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#reviews div {
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+    padding: 10px 20px;
+}
+
+#reviews div:last-child {
+    border-bottom: none;
+}
+
+.byline {
+	color: #1A237E;
+    margin: 5px 0;
+}
+
+.byline time {
+    color: #FF80AB;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1A237E;
+    color: white;
+    padding: 15px 30px;
+}
+
+footer a {
+    color: #00B0FF;
+}
+
+footer p {
+    margin: 5px 0;
+}
