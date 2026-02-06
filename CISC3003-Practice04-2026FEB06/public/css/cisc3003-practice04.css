@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* box sizing for all elements */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+/* general text formatting */
+h1, h2, h3, nav, footer {
+   font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+
+
+/* header and navigation */
+header, footer {
+   color: white;
+   background-color: #1A237E;
+   margin: 0em 4em 0.25em 4em;
+}
+header h1 { 
+   padding: 0.5rem 0 0 1.25rem;
+   font-size: 2rem;
+   font-weight: bold;
+}
+header p { 
+   font-size: 1rem;
+   font-style: italic;
+   margin-bottom: 1rem;
+   padding: 0 0 0 1.25rem;
+}
+
+
+/* main article styling */
+main {
+   background-color: white;
+   margin: 1em 4em 1em 4em;
+   padding: 1em;
+}
+
+section {
+   margin-bottom: 1em;
+   padding: 0;
+   width: 100%;
+}
+
+
+/* ======== FORM FIELDSET STYLING ======== */
+
+/* main fieldset - the PHOTO DETAILS wrapper */
+form > fieldset {
+   margin: 0;
+   padding: 0;
+   background-color: #C5CAE9;
+   width: 100%;
+   border: none;
+}
+
+/* main legend - purple full-width header */
+form > fieldset > legend { 
+   font-size: 1.35rem;
+   background-color: #7986CB;
+   color: #E8EAF6;
+   text-transform: uppercase;
+   width: 100%;
+   margin: 0;
+   padding: 5px 10px;
+}
+
+/* nested fieldsets inside table cells - normal border style */
+fieldset fieldset {
+   border: 1px solid #9FA8DA;
+   padding: 0.5em;
+   margin-bottom: 0.5em;
+   background-color: transparent;
+   width: auto;
+}
+
+/* nested fieldset legends - normal text */
+fieldset fieldset legend {
+   font-size: 1rem;
+   background-color: transparent;
+   color: #333;
+   text-transform: none;
+   height: auto;
+   width: auto;
+   padding: 0 0.25em;
+   font-weight: bold;
+}
+
+
+/* ======== TABLE LAYOUT ======== */
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+td {
+   padding: 1em;
+   vertical-align: top;
+}
+
+form p {
+   margin-top: 0.5em;
+}
+
+/* ======== FORM INPUT WIDTHS ======== */
+
+#title {
+   width: 95%;
+}
+
+textarea {
+   width: 95%;
+}
+
+select {
+   width: 250px;
+}
+
+#city {
+   width: 250px;
+}
+
+
+/* ======== DISTINCT ROW SECTIONS ======== */
+
+/* license acceptance row - lighter band with side margins */
+.license {
+   background-color: #9FA8DA;
+   padding: 0.75em 1em;
+   margin: 0.5em 1em;
+   font-size: 1rem;
+}
+
+/* buttons area - darker band with side margins */
+.buttons {
+   background-color: #9FA8DA;
+   padding: 1em;
+   margin: 0.5em 1em;
+}
+
+
+/* ======== SUBMIT / RESET BUTTONS ======== */
+
+.rounded {
+   background-color: #E91E63;
+   color: white;
+   border: none;
+   padding: 0.75em 1.5em;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   margin-right: 0.5em;
+}
+
+.rounded:hover {
+   background-color: #C2185B;
+}
+
+
+/* ======== FOOTER ======== */
+
+footer {
+   text-align: center;
+   padding: 0.5em;
+   font-size: 0.8rem;
+}

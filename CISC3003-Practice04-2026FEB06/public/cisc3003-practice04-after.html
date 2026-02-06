@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CISC3003 - Practice 04</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/cisc3003-practice04.css">
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p>let us know where you've been</p>
+</header>
+<main>
+   <section>
+   <form method="post" action="process.php">
+
+      <!-- PHOTO DETAILS fieldset -->
+      <fieldset>
+         <legend>PHOTO DETAILS</legend>
+         <table>
+            <tr>
+               <td colspan="2">
+                  <p><label for="title"><strong>Title</strong></label><br>
+                  <input type="text" id="title" name="title" size="60"
+                     placeholder="Give your photo a descriptive name"></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p><label for="desc"><strong><a id="description">Description</a></strong></label><br>
+                  <textarea id="desc" name="description" rows="5" cols="61"
+                     placeholder="Adding a rich description will help with search results"></textarea></p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p><label for="continent"><strong>Continent</strong></label><br>
+                  <select id="continent" name="continent">
+                     <option value="">Choose continent</option>
+                     <option value="Africa">Africa</option>
+                     <option value="Asia">Asia</option>
+                     <option value="Europe">Europe</option>
+                     <option value="North America">North America</option>
+                     <option value="South America">South America</option>
+                  </select></p>
+                  <p><label for="country"><strong>Country</strong></label><br>
+                  <select id="country" name="country">
+                     <option value="">Choose country</option>
+                     <option value="Canada">Canada</option>
+                     <option value="Mexico">Mexico</option>
+                     <option value="United States">United States</option>
+                  </select></p>
+                  <p><label for="city"><strong>City</strong></label><br>
+                  	<select id="city" name="city">
+                  	<option value="" selected disabled>Choose city</option>
+                  	<option value="calgary">Calgary</option>
+                  	<option value="montreal">Montreal</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="vancouver">Vancouver</option>
+                  </select></p>
+               </td>
+               <td>
+                  <fieldset>
+                     <legend>Copyright?</legend>
+                     <input type="radio" name="copyright" id="allrights" value="allrights">
+                     <label for="allrights">All rights reserved</label><br>
+                     <input type="radio" name="copyright" id="cc" value="cc" checked>
+                     <label for="cc">Creative Commons</label>
+                  </fieldset>
+                  <fieldset>
+                     <legend>Creative Commons Types</legend>
+                     <input type="checkbox" name="cc[]" id="cc1" value="1">
+                     <label for="cc1">Attribution</label><br>
+                     <input type="checkbox" name="cc[]" id="cc2" value="2">
+                     <label for="cc2">Noncommercial</label><br>
+                     <input type="checkbox" name="cc[]" id="cc3" value="3">
+                     <label for="cc3">No Derivative Works</label>
+                  </fieldset>
+               </td>
+            </tr>
+         </table>
+
+         <!-- License acceptance row -->
+         <div class="license">
+            I accept the software license
+            <input type="checkbox" name="license" value="yes">
+         </div>
+
+         <!-- Rate, Color, Date, Time -->
+         <table>
+            <tr>
+               <td>
+                  <p><label for="rate"><strong>Rate this photo:</strong></label><br>
+                  <input type="number" min="1" max="5" id="rate" name="rate"></p>
+                  <p><label for="color"><strong>Color Collection:</strong></label><br>
+                  <input type="color" id="color" name="color"></p>
+               </td>
+               <td>
+                  <fieldset>
+                     <p><label for="date"><strong>Date Taken:</strong></label><br>
+                     <input type="date" id="date" name="date"></p>
+                     <p><label for="time"><strong>Time Taken:</strong></label><br>
+                     <input type="time" id="time" name="time"></p>
+                  </fieldset>
+               </td>
+            </tr>
+         </table>
+
+         <!-- Submit / Reset buttons -->
+         <div class="buttons">
+            <input type="submit" value="Submit" class="rounded">
+            <input type="reset" value="Clear Form" class="rounded">
+         </div>
+      </fieldset>
+
+   </form>
+   </section>
+</main>
+
+</body>
+</html>
