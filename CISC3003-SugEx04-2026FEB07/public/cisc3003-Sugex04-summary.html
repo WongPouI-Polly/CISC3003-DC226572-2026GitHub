@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Wong Pou I</title>
+    <link rel="stylesheet" href="css/cisc3003-SugEx04-summary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/um_logo.png" alt="University of Macau Logo" class="um-logo">
+                <div class="name-title">
+                    <h1>WONG POU I</h1>
+                    <p>Computer Science Senior | Software Engineering</p>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="cisc3003-SugEx04-home.html">Home</a></li>
+                    <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                    <li><a href="cisc3003-SugEx04-summary.html" class="active">Summary</a></li>
+                    <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                    <li><a href="cisc3003-SugEx04-qualification.html">Qualifications</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="cisc3003-SugEx04-home.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="cisc3003-SugEx04-profile.html" class="mobile-nav-link">Profile</a></li>
+            <li><a href="cisc3003-SugEx04-summary.html" class="mobile-nav-link active">Summary</a></li>
+            <li><a href="cisc3003-SugEx04-showcase.html" class="mobile-nav-link">Showcase</a></li>
+            <li><a href="cisc3003-SugEx04-qualification.html" class="mobile-nav-link">Qualifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Summary Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Summary & Reflection</h1>
+                <p class="page-subtitle">Goals, development plans, reflections, and future guidance</p>
+            </div>
+        </section>
+
+        <!-- Goals and Outcomes Section -->
+        <section id="goals" class="section goals-section">
+            <div class="container">
+                <h2 class="section-title">Goals & Expected Learning Outcomes</h2>
+                
+                <div class="goals-overview">
+                    <div class="goal-category">
+                        <h3><i class="fas fa-graduation-cap"></i> Academic Goals</h3>
+                        <div class="goal-list">
+                            <div class="goal-item">
+                                <h4>Complete Bachelor's Degree</h4>
+                                <p>Graduate with strong academic performance from University of Macau's Computer Science program (Expected: 2026)</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                    <span class="progress-text">85% Complete</span>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <h4>Master Technical Skills</h4>
+                                <p>Develop proficiency in software engineering, game development, and data management through coursework and projects</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                    <span class="progress-text">75% Complete</span>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <h4>Postgraduate Preparation</h4>
+                                <p>Prepare for and apply to master's programs in Computer Science or Game Development</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                    <span class="progress-text">40% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-category">
+                        <h3><i class="fas fa-briefcase"></i> Professional Goals</h3>
+                        <div class="goal-list">
+                            <div class="goal-item">
+                                <h4>Industry Experience</h4>
+                                <p>Gain practical experience through internships and entry-level positions in technology companies</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                    <p><span class="progress-text">60% Complete</span></p>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <h4>Specialization Development</h4>
+                                <p>Build expertise in game development, 3D modeling, and interactive design</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                    <span class="progress-text">50% Complete</span>
+                                </div>
+                            </div>
+                            <div class="goal-item">
+                                <h4>Professional Network</h4>
+                                <p>Establish connections with professionals in software engineering and gaming industries</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 45%"></div>
+                                    <span class="progress-text">45% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-outcomes">
+                    <h3>Expected Learning Outcomes</h3>
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <h4>Technical Proficiency</h4>
+                            <ul>
+                                <li>Master multiple programming languages and frameworks</li>
+                                <li>Develop game development and 3D modeling skills</li>
+                                <li>Apply software engineering principles to real projects</li>
+                            </ul>
+                        </div>
+                        <div class="outcome-card">
+                            <h4>Professional Competence</h4>
+                            <ul>
+                                <li>Excel in team collaboration and project management</li>
+                                <li>Develop effective communication and presentation skills</li>
+                                <li>Apply problem-solving methodologies to complex challenges</li>
+                            </ul>
+                        </div>
+                        <div class="outcome-card">
+                            <h4>Personal Growth</h4>
+                            <ul>
+                                <li>Balance technical expertise with creative pursuits</li>
+                                <li>Develop resilience and adaptability in changing environments</li>
+                                <li>Maintain work-life integration for sustainable success</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Plan Section -->
+        <section id="development" class="section development-section">
+            <div class="container">
+                <h2 class="section-title">Personal & Professional Development Plan</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025-2026</div>
+                        <div class="timeline-content">
+                            <h3>Final Year & Graduation</h3>
+                            <ul>
+                                <li>Complete remaining Computer Science courses with excellence</li>
+                                <li>Develop comprehensive final year project in software/game development</li>
+                                <li>Prepare for postgraduate program applications</li>
+                                <li>Expand professional network through university events and connections</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026-2028</div>
+                        <div class="timeline-content">
+                            <h3>Career Entry & Master's Program</h3>
+                            <ul>
+                                <li>Begin master's program in Computer Science or Game Development</li>
+                                <li>Secure entry-level position in software engineering</li>
+                                <li>Develop specialized skills in chosen technical areas</li>
+                                <li>Contribute to team projects and gain industry experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028+</div>
+                        <div class="timeline-content">
+                            <h3>Specialization & Advancement</h3>
+                            <ul>
+                                <li>Establish expertise in game development and related technologies</li>
+                                <li>Take on increased responsibility in professional roles</li>
+                                <li>Potentially pursue doctoral studies or advanced certifications</li>
+                                <li>Contribute to innovative projects and possibly entrepreneurial ventures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-development">
+                    <h3>Skill Development Roadmap</h3>
+                    <div class="skill-roadmap">
+                        <div class="skill-phase">
+                            <h4>Current Skills (2025)</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C Programming</span>
+                                <span class="skill-tag">Python Basics</span>
+                                <span class="skill-tag">Web Development</span>
+                                <span class="skill-tag">Excel Proficiency</span>
+                                <span class="skill-tag">Data Management</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-phase">
+                            <h4>Near-term Development (2026)</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Advanced Python</span>
+                                <span class="skill-tag">Java Programming</span>
+                                <span class="skill-tag">Game Development Basics</span>
+                                <span class="skill-tag">3D Modeling Introduction</span>
+                                <span class="skill-tag">Database Systems</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-phase">
+                            <h4>Long-term Goals (2027+)</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Game Engine Mastery</span>
+                                <span class="skill-tag">Advanced 3D Design</span>
+                                <span class="skill-tag">VR/AR Development</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Technical Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection Section -->
+        <section id="reflection" class="section reflection-section">
+            <div class="container">
+                <h2 class="section-title">Reflections & Future Guidance</h2>
+                
+                <div class="reflection-content">
+                    <div class="reflection-card">
+                        <h3><i class="fas fa-university"></i> University Journey Reflection</h3>
+                        <p>My time at University of Macau has been transformative, combining rigorous academic study with valuable extracurricular experiences. The CKLC residential college activities provided holistic development opportunities beyond the classroom, teaching me the importance of community engagement and work-life balance.</p>
+                        <p><strong>Key Insight:</strong> Technical skills alone are insufficient for success; communication, collaboration, and emotional intelligence are equally crucial in professional environments.</p>
+                    </div>
+                    
+                    <div class="reflection-card">
+                        <h3><i class="fas fa-briefcase"></i> Internship Experience Reflection</h3>
+                        <p>The internship at Municipal Affairs Bureau (I.A.M.) provided practical insights into government operations and data management. It reinforced the importance of accuracy, attention to detail, and systematic approaches to problem-solving.</p>
+                        <p><strong>Key Learning:</strong> Even seemingly routine administrative tasks require precision and can benefit from technical optimization through tools like Excel macros and systematic verification processes.</p>
+                    </div>
+                    
+                    <div class="reflection-card">
+                        <h3><i class="fas fa-code"></i> Technical Development Reflection</h3>
+                        <p>My progression in computer science has shifted from learning programming basics to applying technical knowledge to real-world problems. The combination of coursework, self-study (through platforms like Bilibili), and practical projects has created a comprehensive learning ecosystem.</p>
+                        <p><strong>Key Realization:</strong> Continuous learning is essential in technology fields, and proactive skill development (like learning Python beyond required coursework) creates competitive advantages.</p>
+                    </div>
+                </div>
+                
+                <div class="future-guidance">
+                    <h3>Future Guidance & Principles</h3>
+                    <div class="principles-grid">
+                        <div class="principle">
+                            <h4>Embrace Continuous Learning</h4>
+                            <p>Technology evolves rapidly; commit to ongoing skill development through formal education, online courses, and practical projects.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>Balance Specialization with Breadth</h4>
+                            <p>Develop deep expertise in chosen areas (game development) while maintaining broad understanding of related technical fields.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>Prioritize Practical Application</h4>
+                            <p>Translate theoretical knowledge into working solutions through projects, internships, and collaborative work.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>Maintain Work-Life Integration</h4>
+                            <p>Sustain personal interests and wellbeing alongside professional development for long-term success and creativity.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-plan">
+                    <h3>Immediate Action Plan</h3>
+                    <ol class="action-steps">
+                        <li><strong>Complete final year courses</strong> with focus on software engineering and game development electives</li>
+                        <li><strong>Develop comprehensive portfolio</strong> showcasing academic projects and personal initiatives</li>
+                        <li><strong>Research and apply</strong> to postgraduate programs aligned with career goals</li>
+                        <li><strong>Expand technical skills</strong> through online courses in Python, game development, and 3D modeling</li>
+                        <li><strong>Network with professionals</strong> in software engineering and gaming industries</li>
+                        <li><strong>Prepare for job applications</strong> with updated resume, portfolio, and interview skills</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/um_logo_full.png" alt="University of Macau Logo" class="footer-um-logo">
+                <div>
+                    <h3>WONG POU I</h3>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cisc3003-SugEx04-home.html">Home</a></li>
+                        <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                        <li><a href="cisc3003-SugEx04-qualification.html">Qualifications</a></li>
+                        <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://eportfolio.um.edu.mo/user/view.php?id=111756" target="_blank">E-Portfolio</a></li>
+                        <li><a href="Other Files/DC22657_Wong Pou I_Report.pdf" target="_blank">Internship Report</a></li>
+                        <li><a href="Other Files/DC226572_Wong Pou I_CV.pdf" target="_blank">Download CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="mailto:dc22657@um.edu.mo" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/WongPouI-Polly" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 WONG POU I. All rights reserved.</p>
+            <p class="course-info">CISC3003 Web Programming - 2026: DC226572 Wong Pou I</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

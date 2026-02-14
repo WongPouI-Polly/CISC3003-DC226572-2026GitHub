@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifications - Wong Pou I</title>
+    <link rel="stylesheet" href="css/cisc3003-SugEx04-qualification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/um_logo.png" alt="University of Macau Logo" class="um-logo">
+                <div class="name-title">
+                    <h1>WONG POU I</h1>
+                    <p>Computer Science Senior | Software Engineering</p>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="cisc3003-SugEx04-home.html">Home</a></li>
+                    <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                    <li><a href="cisc3003-SugEx04-summary.html">Summary</a></li>
+                    <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                    <li><a href="qualifications.html" class="active">Qualifications</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="cisc3003-SugEx04-home.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="cisc3003-SugEx04-profile.html" class="mobile-nav-link">Profile</a></li>
+            <li><a href="cisc3003-SugEx04-summary.html" class="mobile-nav-link">Summary</a></li>
+            <li><a href="cisc3003-SugEx04-showcase.html" class="mobile-nav-link">Showcase</a></li>
+            <li><a href="qualifications.html" class="mobile-nav-link active">Qualifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Qualifications Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Qualifications</h1>
+                <p class="page-subtitle">Education, work experience, awards, service, and resume</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <h2 class="section-title">Education Background</h2>
+                
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-period">2022 - 2026 (Expected)</div>
+                        <div class="education-content">
+                            <h3>University of Macau</h3>
+                            <p class="education-degree">Bachelor of Science in Computer Science</p>
+                            <p class="education-specialization">Software Engineering Track</p>
+                            <div class="education-details">
+                                <p><strong>Faculty:</strong> Science and Technology</p>
+                                <p><strong>Department:</strong> Computer and Information Science</p>
+                                <p><strong>Residential College:</strong> Cheong Kun Lun College (CKLC)</p>
+                                <p><strong>Status:</strong> Senior Year (Final Year)</p>
+                            </div>
+                            <div class="education-highlights">
+                                <h4>Key Coursework:</h4>
+                                <ul>
+                                    <li>Programming Fundamentals (C Language)</li>
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Software Engineering Principles</li>
+                                    <li>Database Systems</li>
+                                    <li>Web Programming</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-period">2019 - 2022</div>
+                        <div class="education-content">
+                            <h3>Lou Hau High School</h3>
+                            <p class="education-degree">Secondary Education Graduate</p>
+                            <p class="education-specialization">Science Stream with Programming Focus</p>
+                            <div class="education-details">
+                                <p><strong>Graduation:</strong> July 2022</p>
+                                <p><strong>Elective Subjects:</strong> Artificial Intelligence Programming</p>
+                                <p><strong>Language:</strong> Certificate in French and Literature</p>
+                            </div>
+                            <div class="education-highlights">
+                                <h4>Academic Performance:</h4>
+                                <ul>
+                                    <li>Commendations: 11 merits, 2 minor awards</li>
+                                    <li>Perfect Attendance Award (5 times)</li>
+                                    <li>Active participation in science and programming activities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <h3>Certifications & Tests</h3>
+                    <div class="certification-grid">
+                        <div class="certification-card">
+                            <h4>Putonghua Proficiency Test</h4>
+                            <p class="cert-level">Level 3A</p>
+                            <p class="cert-issuer">Macao Polytechnic University</p>
+                            <p class="cert-date">April 2021</p>
+                        </div>
+                        <div class="certification-card">
+                            <h4>French Language Certificate</h4>
+                            <p class="cert-level">Secondary Education</p>
+                            <p class="cert-issuer">Lou Hau High School</p>
+                            <p class="cert-date">2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Municipal Affairs Bureau (I.A.M.)</h3>
+                        <p class="experience-role">Intern - Administrative Licensing Division</p>
+                        <p class="experience-period">June 1 - July 31, 2025 (Full-time)</p>
+                    </div>
+                    
+                    <div class="experience-details">
+                        <h4>Department & Team</h4>
+                        <p><strong>Department:</strong> Environmental Hygiene and Licensing Administrative Licensing Division</p>
+                        <p><strong>Team:</strong> Temporary Public Street Occupation Permit Team (10+ members)</p>
+                        
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Cross-referenced physical permit files (2004-2010) with Excel records to ensure consistency</li>
+                            <li>Organized files into labeled storage boxes for office relocation with August 4 deadline</li>
+                            <li>Managed incomplete or standalone files, creating separate tracking logs</li>
+                            <li>Identified and resolved discrepancies between digital and physical records</li>
+                            <li>Developed Excel macros to automate verification tasks and improve efficiency</li>
+                        </ul>
+                        
+                        <h4>Achievements & Impact</h4>
+                        <ul>
+                            <li>Reduced file retrieval time by 30% through reorganization of 2014-2015 files</li>
+                            <li>Completed archiving for 2004-2012 documents ahead of relocation deadline</li>
+                            <li>Implemented automated Excel checks using conditional formatting to highlight errors</li>
+                            <li>Trained new intern on filing procedures and verification methods</li>
+                            <li>Resolved 15+ linkage errors and corrected date misalignments in tracking system</li>
+                        </ul>
+                        
+                        <h4>Skills Applied & Developed</h4>
+                        <div class="skills-applied">
+                            <span class="skill-tag">Excel Advanced Functions</span>
+                            <span class="skill-tag">Data Verification</span>
+                            <span class="skill-tag">Document Management</span>
+                            <span class="skill-tag">Process Optimization</span>
+                            <span class="skill-tag">Quality Assurance</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Summer Activity Program</h3>
+                        <p class="experience-role">Teaching Assistant</p>
+                        <p class="experience-period">Summer 2023</p>
+                    </div>
+                    
+                    <div class="experience-details">
+                        <h4>Responsibilities</h4>
+                        <ul>
+                            <li>Supported educational workshops and learning activities</li>
+                            <li>Guided students in hands-on learning projects</li>
+                            <li>Assisted with activity planning and implementation</li>
+                            <li>Provided technical support for educational technology tools</li>
+                        </ul>
+                        
+                        <h4>Skills Developed</h4>
+                        <div class="skills-applied">
+                            <span class="skill-tag">Instructional Support</span>
+                            <span class="skill-tag">Student Guidance</span>
+                            <span class="skill-tag">Activity Coordination</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section awards-section">
+            <div class="container">
+                <h2 class="section-title">Awards & Recognitions</h2>
+                
+                <div class="awards-categories">
+                    <div class="awards-category">
+                        <h3><i class="fas fa-trophy"></i> Academic Excellence</h3>
+                        <div class="awards-list">
+                            <div class="award-item">
+                                <h4>Nam Kwong Education Second Prize</h4>
+                                <p class="award-details">Awarded for academic performance and service (21.5 service hours)</p>
+                            </div>
+                            <div class="award-item">
+                                <h4>High School Commendations</h4>
+                                <p class="award-details">11 merits and 2 minor awards for academic achievement and conduct</p>
+                            </div>
+                            <div class="award-item">
+                                <h4>Perfect Attendance Awards</h4>
+                                <p class="award-details">Received 5 times during high school for consistent attendance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="awards-category">
+                        <h3><i class="fas fa-laptop-code"></i> Technical Competitions</h3>
+                        <div class="awards-list">
+                            <div class="award-item">
+                                <h4>Alice 3D Programming Competition</h4>
+                                <p class="award-details">Award for creativity and technical skills in programming competition</p>
+                            </div>
+                            <div class="award-item">
+                                <h4>CKLC Talent Show Prize</h4>
+                                <p class="award-details">Won aromatherapy prize in college talent show (March 2023)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="awards-category">
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <div class="awards-list">
+                            <div class="award-item">
+                                <h4>Putonghua Proficiency Test - Level 3A</h4>
+                                <p class="award-details">Macao Polytechnic University, April 2021</p>
+                            </div>
+                            <div class="award-item">
+                                <h4>French Language Certificate</h4>
+                                <p class="award-details">Secondary education certification in French and literature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section id="service" class="section service-section">
+            <div class="container">
+                <h2 class="section-title">Community Service & Activities</h2>
+                
+                <div class="service-categories">
+                    <div class="service-category">
+                        <h3><i class="fas fa-hands-helping"></i> Volunteer Work</h3>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <h4>Flag Selling Fundraiser Volunteer</h4>
+                                <p class="service-org">Macao Federation of Trade Unions</p>
+                                <p class="service-date">October 2019</p>
+                                <p class="service-desc">Actively participated in charity fundraising activities to support welfare programs in the community.</p>
+                            </div>
+                            <div class="service-item">
+                                <h4>Cultural Performance Volunteer</h4>
+                                <p class="service-org">"80th Anniversary of Victory" Event</p>
+                                <p class="service-date">August 2025</p>
+                                <p class="service-desc">Participated as volunteer in cultural performance commemorating historical anniversary (extracurricular activity).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3><i class="fas fa-users"></i> University Activities</h3>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <h4>CKLC Residential College Activities</h4>
+                                <p class="service-date">2022-2023 Academic Year</p>
+                                <p class="service-desc">Participated in 11 college activities including Campus Night Run, Entrepreneurship Workshop, Movie Screenings, Talent Show, and Dining Etiquette Workshop.</p>
+                            </div>
+                            <div class="service-item">
+                                <h4>High School Extracurriculars</h4>
+                                <p class="service-desc">Participated in Experimental Science Research, Senior High School Modeling Course, and Animation Programming Training Course (all graded A).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3><i class="fas fa-graduation-cap"></i> Educational Engagement</h3>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <h4>University Exploration Activities</h4>
+                                <p class="service-date">2021</p>
+                                <p class="service-desc">Explored mainland universities' courses and scientific experiments online. Visited University of Macau and Macau University of Science and Technology to learn about research achievements and laboratory facilities.</p>
+                            </div>
+                            <div class="service-item">
+                                <h4>Summer Activity Teaching Assistant</h4>
+                                <p class="service-desc">Supported educational workshops and guided students in hands-on learning activities during summer program.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Download Section -->
+        <section id="resume" class="section resume-section">
+            <div class="container">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                
+                <div class="resume-content">
+                    <div class="resume-intro">
+                        <h3>Complete Professional Profile</h3>
+                        <p>For a comprehensive overview of my qualifications, experiences, and achievements, please download my complete curriculum vitae.</p>
+                        
+                        <div class="resume-highlights">
+                            <h4>CV Highlights:</h4>
+                            <ul>
+                                <li>Detailed education history from secondary school through university</li>
+                                <li>Complete work experience including internship responsibilities and achievements</li>
+                                <li>Full list of awards, certifications, and recognitions</li>
+                                <li>Comprehensive record of community service and extracurricular activities</li>
+                                <li>Technical skills inventory and proficiency levels</li>
+                                <li>Personal statement and career objectives</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="download-options">
+                        <h3>Download Options</h3>
+                        <div class="download-cards">
+                            <div class="download-card">
+                                <div class="download-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <h4>Full Curriculum Vitae</h4>
+                                <p>Complete professional CV with all details</p>
+                                <a href="Other Files/DC226572_Wong Pou I_CV.pdf" class="btn-primary" target="_blank">
+                                    <i class="fas fa-download"></i> Download CV (PDF)
+                                </a>
+                            </div>
+                            
+                            <div class="download-card">
+                                <div class="download-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h4>Internship Report</h4>
+                                <p>Detailed report on I.A.M. internship experience</p>
+                                <a href="Other Files/DC22657_Wong Pou I_Report.pdf" class="btn-secondary" target="_blank">
+                                    <i class="fas fa-download"></i> Download Report (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-promo">
+                        <h3>References & Additional Information</h3>
+                        <p>References and verification of qualifications are available upon request. For additional information or clarification about any aspect of my qualifications, please don't hesitate to contact me.</p>
+                        <a href="cisc3003-SugEx04-profile.html#contact" class="btn-primary">
+                            <i class="fas fa-envelope"></i> Contact for References
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/um_logo_full.png" alt="University of Macau Logo" class="footer-um-logo">
+                <div>
+                    <h3>WONG POU I</h3>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cisc3003-SugEx04-home.html">Home</a></li>
+                        <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                        <li><a href="cisc3003-SugEx04-summary.html">Summary</a></li>
+                        <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://eportfolio.um.edu.mo/user/view.php?id=111756" target="_blank">E-Portfolio</a></li>
+                        <li><a href="Other Files/DC22657_Wong Pou I_Report.pdf" target="_blank">Internship Report</a></li>
+                        <li><a href="Other Files/DC226572_Wong Pou I_CV.pdf" target="_blank">Download CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="mailto:dc22657@um.edu.mo" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/WongPouI-Polly" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 WONG POU I. All rights reserved.</p>
+            <p class="course-info">CISC3003 Web Programming - 2026: DC226572 Wong Pou I</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wong Pou I - Portfolio</title>
+    <link rel="stylesheet" href="css/cisc3003-SugEx04-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/um_logo.png" alt="University of Macau Logo" class="um-logo">
+                <div class="name-title">
+                    <h1>WONG POU I</h1>
+                    <p>Computer Science Senior | Software Engineering</p>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="cisc3003-SugEx04-home.html" class="active">Home</a></li>
+                    <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                    <li><a href="cisc3003-SugEx04-summary.html">Summary</a></li>
+                    <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                    <li><a href="cisc3003-SugEx04-qualification.html">Qualifications</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="cisc3003-SugEx04-home.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="cisc3003-SugEx04-profile.html" class="mobile-nav-link">Profile</a></li>
+            <li><a href="cisc3003-SugEx04-summary.html" class="mobile-nav-link">Summary</a></li>
+            <li><a href="cisc3003-SugEx04-showcase.html" class="mobile-nav-link">Showcase</a></li>
+            <li><a href="cisc3003-SugEx04-qualification.html" class="mobile-nav-link">Qualifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Hello, I'm <span class="highlight">Pou I</span></h2>
+                        <p class="hero-subtitle">A Senior Computer Science student at University of Macau specializing in Software Engineering with passion for technology and innovation</p>
+                        <div class="hero-buttons">
+                            <a href="cisc3003-SugEx04-profile.html" class="btn-primary">View My Profile</a>
+                            <a href="cisc3003-SugEx04-qualification.html" class="btn-secondary">See Qualifications</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-frame">
+                            <img src="images/student_headshot.jpg" alt="Wong Pou I Headshot" class="headshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>University of Macau, Faculty of Science and Technology</p>
+                        <p>Bachelor of Science in Computer Science - Software Engineering Track</p>
+                        <p>Expected Graduation: 2026</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Internship Experience</h3>
+                        <p>Municipal Affairs Bureau (I.A.M.)</p>
+                        <p>Administrative Licensing Division</p>
+                        <p>June - July 2025</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                        <p>Programming: C, Python, Java, JavaScript</p>
+                        <p>Web Development: HTML, CSS, React</p>
+                        <p>Tools: Git, Excel, Office Suite</p>
+                    </div>
+                </div>
+                
+                <div class="quick-links">
+                    <h3 class="quick-links-title">Explore More</h3>
+                    <div class="quick-links-grid">
+                        <a href="cisc3003-SugEx04-profile.html#values" class="quick-link">
+                            <i class="fas fa-handshake"></i>
+                            <span>Values & Beliefs</span>
+                        </a>
+                        <a href="cisc3003-SugEx04-profile.html#career" class="quick-link">
+                            <i class="fas fa-rocket"></i>
+                            <span>Career Aspirations</span>
+                        </a>
+                        <a href="cisc3003-SugEx04-profile.html#interests" class="quick-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Interests</span>
+                        </a>
+                        <a href="cisc3003-SugEx04-summary.html#goals" class="quick-link">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Goals & Outcomes</span>
+                        </a>
+                        <a href="cisc3003-SugEx04-showcase.html#achievements" class="quick-link">
+                            <i class="fas fa-trophy"></i>
+                            <span>Achievements</span>
+                        </a>
+                        <a href="cisc3003-SugEx04-qualification.html#education" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>Education</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Content Section -->
+        <section class="section featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Content</h2>
+                <div class="featured-content">
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="images/Participate_Volunteer.jpg" alt="Volunteer Work">
+                        </div>
+                        <div class="featured-text">
+                            <h3>Community Involvement</h3>
+                            <p>Active participation in extracurricular and volunteer activities demonstrates commitment to community service and social responsibility.</p>
+                            <a href="cisc3003-SugEx04-qualification.html#service" class="featured-link">View Service Record →</a>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="images/Computer_science.jpg" alt="Computer Science">
+                        </div>
+                        <div class="featured-text">
+                            <h3>Technical Expertise</h3>
+                            <p>Strong foundation in software engineering principles and practical experience through academic projects and internship.</p>
+                            <a href="cisc3003-SugEx04-showcase.html#projects" class="featured-link">View Projects →</a>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="images/Tea_making_1.webp" alt="Personal Interests">
+                        </div>
+                        <div class="featured-text">
+                            <h3>Personal Development</h3>
+                            <p>Balancing technical skills with personal interests including tea ceremony, reading, and music for holistic growth.</p>
+                            <a href="cisc3003-SugEx04-profile.html#skills-development" class="featured-link">View Interests →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Preview Section -->
+        <section class="section contact-preview">
+            <div class="container">
+                <div class="contact-preview-content">
+                    <h2>Let's Connect</h2>
+                    <p>I'm currently exploring opportunities in software engineering and game development. Feel free to reach out for collaboration or opportunities.</p>
+                    <a href="cisc3003-SugEx04-profile.html#contact" class="btn-primary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/um_logo_full.png" alt="University of Macau Logo" class="footer-um-logo">
+                <div>
+                    <h3>WONG POU I</h3>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cisc3003-SugEx04-profile.html">Profile</a></li>
+                        <li><a href="cisc3003-SugEx04-qualification.html">Qualifications</a></li>
+                        <li><a href="cisc3003-SugEx04-summary.html">Summary</a></li>
+                        <li><a href="cisc3003-SugEx04-showcase.html">Showcase</a></li>
+                        <li><a href="cisc3003-SugEx04-profile.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://eportfolio.um.edu.mo/user/view.php?id=111756" target="_blank">E-Portfolio</a></li>
+                        <li><a href="https://www.um.edu.mo" target="_blank">University of Macau</a></li>
+                        <li><a href="Other Files/DC22657_Wong Pou I_Report.pdf" target="_blank">Internship Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="mailto:dc22657@um.edu.mo" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/WongPouI-Polly" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 WONG POU I. All rights reserved.</p>
+            <p class="course-info">CISC3003 Web Programming - 2026: DC226572 Wong Pou I</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
