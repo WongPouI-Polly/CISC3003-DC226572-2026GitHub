@@ -186,6 +186,10 @@
   background: linear-gradient(135deg, #7c2d12, #dc2626);
 }
 
+.project-img--travel {
+  background: linear-gradient(135deg, #065f46, #059669);
+}
+
 .project-preview .card-body p {
   font-size: 0.9rem;
   color: #4b5563;
