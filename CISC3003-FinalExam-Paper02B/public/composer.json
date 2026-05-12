@@ -1,0 +1,15 @@
+{
+    "name": "cisc3003/paper02b",
+    "description": "CISC3003 Final Exam Paper02B - Contact Form with PHPMailer",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "authors": [
+        {
+            "name": "Wong Pou I",
+            "email": "dc226572@um.edu.mo"
+        }
+    ]
+}
