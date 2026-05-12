@@ -1,0 +1,167 @@
+/**
+ * CISC3003-FinalExam-Paper02B - External Stylesheet
+ * Student: Wong Pou I (DC226572)
+ */
+
+/* ============ CSS Variables ============ */
+:root {
+    --background-body: #fff;
+    --background: #efefef;
+    --background-alt: #f7f7f7;
+    --text-main: #363636;
+    --text-bright: #000;
+    --text-muted: #70777f;
+    --links: #0076d1;
+    --focus: #0096bfab;
+    --border: #dbdbdb;
+    --button-base: #0d6efd;
+    --button-hover: #0b5ed7;
+    --error-color: #dc3545;
+    --success-color: #198754;
+    --alert-bg-error: #ffe6e6;
+    --alert-bg-success: #d4edda;
+}
+
+/* ============ Global Reset ============ */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background: var(--background-body);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ============ Typography ============ */
+h1 { color: var(--text-bright); border-bottom: 2px solid var(--border); padding-bottom: 0.5rem; }
+header p { color: var(--text-muted); }
+
+/* ============ B.01: Contact Form ============ */
+form {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--background-alt);
+}
+
+legend { font-weight: 700; font-size: 1.1rem; color: var(--text-bright); }
+
+.form-group { margin-bottom: 1.2rem; position: relative; }
+
+label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--background-body);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--focus);
+    box-shadow: 0 0 0 3px var(--focus);
+}
+
+/* B.01: Visual feedback for client-side validation */
+input.invalid,
+textarea.invalid {
+    border-color: var(--error-color);
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+input.valid,
+textarea.valid {
+    border-color: var(--success-color);
+    box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.25);
+}
+
+.validation-message {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    min-height: 1.2rem;
+}
+
+.validation-message.error {
+    color: var(--error-color);
+}
+
+.validation-message.success {
+    color: var(--success-color);
+}
+
+textarea { resize: vertical; min-height: 120px; }
+.form-group small { color: var(--text-muted); font-size: 0.85rem; }
+
+/* ============ Alerts (B.05: PRG pattern feedback) ============ */
+.alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: var(--alert-bg-success);
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.alert-error {
+    background: var(--alert-bg-error);
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* ============ Buttons ============ */
+.form-actions { display: flex; gap: 1rem; margin-top: 1rem; }
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    font-family: inherit;
+}
+
+button[type="submit"] { background-color: var(--button-base); color: #fff; }
+button[type="submit"]:hover { background-color: var(--button-hover); }
+button[type="reset"] { background-color: #6c757d; color: #fff; }
+button[type="reset"]:hover { background-color: #5c636a; }
+
+/* ============ Footer ============ */
+footer {
+    margin-top: 2rem; padding: 1rem;
+    text-align: center; border-top: 2px solid var(--border);
+    color: var(--text-muted); font-size: 0.9rem; font-weight: 600;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 600px) {
+    body { padding: 0.5rem; }
+    .form-actions { flex-direction: column; }
+}

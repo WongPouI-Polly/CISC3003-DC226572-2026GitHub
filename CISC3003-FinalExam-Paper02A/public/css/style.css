@@ -1,0 +1,221 @@
+/**
+ * CISC3003-FinalExam-Paper02A - External Stylesheet
+ * Student: Wong Pou I (DC226572)
+ * Reference: https://watercss.kognise.dev/
+ */
+
+/* ============ CSS Variables / Root Settings ============ */
+:root {
+    --background-body: #fff;
+    --background: #efefef;
+    --background-alt: #f7f7f7;
+    --selection: #9e9e9e;
+    --text-main: #363636;
+    --text-bright: #000;
+    --text-muted: #70777f;
+    --links: #0076d1;
+    --focus: #0096bfab;
+    --border: #dbdbdb;
+    --code: #000;
+    --animation-duration: 0.1s;
+    --button-base: #0d6efd;
+    --button-hover: #0b5ed7;
+    --scrollbar-thumb: rgb(170, 170, 170);
+    --scrollbar-track: rgb(230, 230, 230);
+    --form-placeholder: #949494;
+}
+
+/* ============ Global Reset & Base ============ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background: var(--background-body);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+}
+
+/* ============ Typography ============ */
+h1, h2, h3 {
+    color: var(--text-bright);
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--text-muted);
+}
+
+/* ============ Form Styles ============ */
+form {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--background-alt);
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    color: var(--text-bright);
+}
+
+/* ============ Form Controls (A.02, A.03, A.04) ============ */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--text-main);
+}
+
+/* A.02: Simple text input controls */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--background-body);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color var(--animation-duration) ease,
+                box-shadow var(--animation-duration) ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--focus);
+    box-shadow: 0 0 0 3px var(--focus);
+}
+
+/* A.03: Multi-line text input (textarea) */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
+
+/* A.04: Radio buttons and Checkboxes */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.3rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+    accent-color: var(--button-base);
+}
+
+/* ============ Buttons ============ */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--animation-duration) ease;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: var(--button-base);
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover);
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #5c636a;
+}
+
+/* ============ Footer ============ */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .form-actions {
+        flex-direction: column;
+    }
+}
